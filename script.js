@@ -6,7 +6,7 @@ const livesDisplay = document.getElementById('lives');
 
 let score = 0;
 let lives = 3;
-let objectFallSpeed = 2; // Initial speed
+let objectFallSpeed = 2; 
 let isGameOver = false;
 
 document.addEventListener('keydown', (e) => {
@@ -37,7 +37,7 @@ document.addEventListener('keydown', (e) => {
     const objectLeft = fallingObject.offsetLeft;
     const objectRight = objectLeft + fallingObject.offsetWidth;
   
-    // New collision condition with more precision
+    // collision condition
     if (
       objectPosition + fallingObject.offsetHeight >= player.offsetTop && // checks vertical overlap
       objectLeft >= playerLeft + 10 && // ensures object is within 10px of the player's left side
@@ -67,7 +67,6 @@ document.addEventListener('keydown', (e) => {
   
   function endGame() {
     isGameOver = true;
-    // Show the Game Over message
     const gameOverMessage = document.getElementById('gameOverMessage');
     gameOverMessage.style.display = 'block';
   }

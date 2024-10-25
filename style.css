@@ -19,9 +19,9 @@
     width: 400px;
     height: 600px;
     background-image: url('img/back.jpg');
-    background-size: cover; /* Or use 'cover' if you want it to fill the container */
-    background-repeat: no-repeat; /* Ensures it doesn’t repeat */
-    background-position: bottom center; /* Positions the image at the bottom */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: bottom center; 
     border: 2px solid #333;
     overflow: hidden;
   }
@@ -30,8 +30,8 @@
   #player {
     position: absolute;
     bottom: 10px;
-    width: 90px; /* Adjust to match your image size */
-    height: 90px; /* Adjust to match your image size */
+    width: 90px; 
+    height: 90px; 
     background-image: url('img/bucket.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,8 +39,8 @@
   
   #fallingObject {
     position: absolute;
-    width: 30px; /* Adjust to match your image size */
-    height: 30px; /* Adjust to match your image size */
+    width: 30px;
+    height: 30px; 
     background-image: url('img/ball.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,19 +60,19 @@
     transform: translate(-50%, -50%);
     font-size: 48px;
     font-weight: bold;
-    color: #ff0000; /* Red color for visibility */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #ff0000; 
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px 40px;
     border-radius: 10px;
     text-align: center;
-    z-index: 10; /* Ensure it stays above other elements */
+    z-index: 10; 
   }
   
   #gameOverMessage button {
     font-size: 20px;
     font-weight: bold;
     color: #fff;
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50; 
     border: none;
     padding: 10px 20px;
     margin-top: 20px;
@@ -82,11 +82,11 @@
   }
   
   #gameOverMessage button:hover {
-    background-color: #45a049; /* Darker green on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    background-color: #45a049; 
+    transform: scale(1.1); 
   }
   
   #gameOverMessage button:active {
-    transform: scale(1.05); /* Slightly smaller on click */
+    transform: scale(1.05);
   }
   
